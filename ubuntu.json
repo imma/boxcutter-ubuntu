@@ -158,6 +158,11 @@
     }
   ],
   "provisioners": [
+		{
+			"type": "file",
+			"source": "../shell/data/cache/packages",
+			"destination": "/tmp"
+		},
     {
       "environment_vars": [
         "CLEANUP_PAUSE={{user `cleanup_pause`}}",
